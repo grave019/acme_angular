@@ -1,5 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-import { Iproduct } from "./product";
+import { IProduct } from "./product";
 @Component({
     selector: 'pm-products',
     templateUrl: './product-list.component.html',
@@ -22,7 +22,7 @@ export class ProductListComponent implements OnInit  {
     }
 
     filteredProducts: IProduct[] = [];
-    products: Iproduct[] = [
+    products: IProduct[] = [
         {
           "productId": 1,
           "productName": "Leaf Rake",
@@ -75,9 +75,9 @@ export class ProductListComponent implements OnInit  {
         }
       ]
 
-      performFilter(filterBy: string): Iproduct[] {
+      performFilter(filterBy: string): IProduct[] {
           filterBy = filterBy.toLocaleLowerCase();
-          return this.products.filter((product: Iproduct) =>
+          return this.products.filter((product: IProduct) =>
           product.productName.toLocaleLowerCase().includes(filterBy));
       }
 
