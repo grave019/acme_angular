@@ -9,6 +9,7 @@ import { ConvertoSpacesPipe } from './shared/convert-to-spaces.pipe';
 import { StarComponent } from './shared/star.component';
 import { ProductDetailComponent } from './Products/product-detail.component';
 import { WelcomeComponent } from './home/welcome.component';
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { WelcomeComponent } from './home/welcome.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule.forRoot([])
   ],
   bootstrap: [AppComponent]
 })
