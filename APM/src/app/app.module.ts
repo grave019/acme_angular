@@ -9,7 +9,6 @@ import { ConvertoSpacesPipe } from './shared/convert-to-spaces.pipe';
 import { StarComponent } from './shared/star.component';
 import { ProductDetailComponent } from './Products/product-detail.component';
 import { RouterModule } from '@angular/router';
-//import { ProductService } from './Products/product.service';
 import { WelcomeComponent } from './home/welcome.component';
 
 
