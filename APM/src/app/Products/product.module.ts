@@ -1,7 +1,5 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { ConvertoSpacesPipe } from '../shared/convert-to-spaces.pipe';
-import { StarComponent } from '../shared/star.component';
 import { ProductListComponent } from './product-list.component';
 import { ProductDetailComponent } from './product-detail.component';
 import { FormsModule } from '@angular/forms';
@@ -14,10 +12,8 @@ import { SharedModule } from '../shared/shared.module';
     ProductListComponent,
     ProductDetailComponent,
     ConvertoSpacesPipe,
-    StarComponent
   ],
   imports: [
-    CommonModule,
     FormsModule,
     RouterModule.forChild([
       { path: 'products', component: ProductListComponent },
