@@ -11,6 +11,7 @@ import { ProductDetailComponent } from './Products/product-detail.component';
 import { RouterModule } from '@angular/router';
 import { WelcomeComponent } from './home/welcome.component';
 import { ProductDetailGuard } from './Products/product-detail.guard';
+import { ProductModule } from './products/product.module';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import { ProductDetailGuard } from './Products/product-detail.guard';
     { path: '', redirectTo: 'welcome', pathMatch: 'full' },
     { path: '**', redirectTo: 'welcome', pathMatch: 'full' }
 
-    ])
+    ]),
+    ProductModule
   ],
   bootstrap: [AppComponent]
 })
